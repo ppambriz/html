@@ -1,0 +1,66 @@
+---- <!DOCTYPE> ----
+<!DOCTYPE> --> indica que se utilizará html5
+
+
+----- ENCABEZADOS -----
+<h1>This is heading 1</h1>
+<h2>This is heading 2</h2>
+<h3>This is heading 3</h3>
+
+
+
+----- PÁRRAFOS -----
+<P> Esto es un párrafo <p>
+ ##ATRIBUTO TITLE##
+  #Se puede poner en cualquier etiqueta: agrea un titulo de la etiqueta al pasarl el mouse encvima
+   
+
+----- LISTAS -----
+- ORDENADAS
+    <ol>
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+    </ol>
+
+- DESOREDENADAS
+    <ul>
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+    </ul>
+
+
+---- ENLACES HTML -----
+ #Enlace a una página web
+  #Abre en la misma página
+   <a href="https://www.w3schools.com">This is a link</a>
+  
+  #Abre en la misma página: target="_self"
+   <a href="https://www.w3schools.com" taget="_self">This is a link</a>
+
+  #Abre en otra página: target="_blank"
+   <a href="https://www.w3schools.com" taget="_blank">This is a link</a>
+
+----- AGREGAR IMÁGEN ---- No necesitan cerrarse
+ #Extensión para ver la imagen previa en el codigo: Image preview
+
+ #Agregar imagen desde la carpeta trabajando/ src = "direccion-de-la-imagen  alt="mensaje-a-mostrar-si-no-carga-la-imagen"(Solo aparece si la imagen no se carga, tambien posiciona en buscadores)  width = "ancho" height = "largo"
+ <img src="w3schools.jpg" alt="W3Schools.com" width="150" height="160">   
+
+ #Agregar imagen desde una carpeta
+ <img src="imagenes/1.jpg" alt="Imagen desde carpeta" title="imagen desde carpeta" width = "300" height = "200">
+
+
+--------FORMULARIOS--------
+
+
+
+
+
+
+
+
+
+
+
