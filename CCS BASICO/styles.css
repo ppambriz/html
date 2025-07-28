@@ -1,0 +1,22 @@
+/*Selecionamos el selector p*, todos los p* van a tener el color rojo*/
+p{
+    color: rgb(128, 0, 100);
+}
+/*para cambiar solo una parte del texto */
+span{
+    color: rgb(21, 128, 0);
+}
+
+/*Acomodar los estilos por clases*/
+.faltante{
+    color: rgb(21, 128, 0);
+}
+
+/*Acomodar los estilos por id*/
+#ingrediente-secreto{
+    color: rgb(128, 94, 0);
+}
+
+/* LOS ELEMENTOS "CLASE" PUEDEN TENER EL FORMATO VARIOS ELEMENTOS PERO
+LOS ID ES UNICO, NO SE PUEDE REPETIR*/
+

@@ -1,0 +1,38 @@
+p{
+    /*color;*/
+    color: red;
+    /*font del texto*/
+    font-family: sans-serif;
+    /*tamaño de letra*/
+    font-size: 15px;
+    /*peso de letra (negrita) 400 es normal, 700 es negrita*/
+    font-weight: bold;
+    /*estilo de letra*/
+    font-style: italic;
+    /*decoracion de letra*/
+    text-decoration: underline;
+    /*alineacion de textodentro de su contenedor*/ 
+    text-align: justify; 
+}
+
+h1{
+    /*Se i ngresam varias opciones por si una de ellas no carga por que no está incluida en el sistemaoperatico*/
+    font-family: sans-serif,'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+/*Quitar el subrayado a los enlaces*/
+a{
+    text-decoration: none;
+}
+
+
+p{
+    /*Espaciado entre lineas*/
+    line-height: 1.5,1,2,3,normal;
+    /*Espaciado entre letras*/
+    letter-spacing: 1px,2px,3px,4px,5px,6px,7px,8px,9px,10px,11px,12px,13px,14px,15px,16px,17px,18px,19px,20px,21px,22px,23px,24px,25px,26px,27px,28px,29px,30px;
+    /*Transformar el texto a mayusculas o minusculas*/
+    text-transform: uppercase;
+
+}
