@@ -1,0 +1,35 @@
+/*
+**********CONCEPTOS**********
+Contenido/Container
+Es el contenido dentro del box
+
+Relleno/Padding
+Espacio entre el contenido y el borde del box
+
+Borde/Border
+Linea que rodea el box, se puede controlar el grosor, color y estilo del border.
+
+Border Radius
+Maneja las esquinas
+
+Margen/Margin
+Esapcio alrededor de la box, separa el elemento de otras cajas.
+*/
+
+div{
+    /*Degine el color de fondo de la caja pero tienen que estar definidos el ancho y largo de la caja*/
+    background: red;
+    /*Ancho en pixeles, puede ser en porcentaje, em, rem, etc.*/
+    width: 300px;
+    /*Largo en pixeles, puede ser en porcentaje, em, rem, etc.*/
+    height:200px;
+}
+
+h12{/*Es un H1 peor para que no afecte*/
+    /*De esta forma definimos su color de fondo en el tamaño de la box*/
+    /*Se puede reducir en pixeles o porcentajes*/
+    /*El porcentaje es relativo al contenedor*/
+    background: blue;
+    width: 100%;
+    height: 100%;
+}

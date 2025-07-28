@@ -1,0 +1,21 @@
+/*
+********CONCEPTOS********
+Padding es el relleno de la caja, es el espacio entre el contenido y el borde.
+Margin es el espacio entre la caja y el resto de las cajas.
+crt+alt+flechas (selección multiple para agregar el mismo texto a varios elementos
+*/
+
+.form{
+    background: red;
+    padding: 10px;/*RELLENO COMPLETO*/
+    padding: 10px 0 30px 40px;/*RELLENO SUPERIOR, DERECHA, INFERIOR, IZQUIERDA el cero no lleva unidades*/
+    padding: 10px 20px; /*Relleno superior e inferior 10px y relleno derecho e izquierdo 20px*/
+    padding-top: 10px;/*RELLENO SUPERIOR*/
+    padding-right: 10px;/*RELLENO DERECHA*/
+    padding-bottom: 10px;/*RELLENO INFERIOR*/
+    padding-left: 10px;/*RELLENO IZQUIERDA*/
+}
+
+.form_input{
+    padding: 10px
+}

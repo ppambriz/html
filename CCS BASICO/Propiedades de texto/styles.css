@@ -33,6 +33,11 @@ p{
     /*Espaciado entre letras*/
     letter-spacing: 1px,2px,3px,4px,5px,6px,7px,8px,9px,10px,11px,12px,13px,14px,15px,16px,17px,18px,19px,20px,21px,22px,23px,24px,25px,26px,27px,28px,29px,30px;
     /*Transformar el texto a mayusculas o minusculas*/
-    text-transform: uppercase;
+    text-transform: uppercase,lowercase,capitalize;
+    /*ENCONTRAR MAS TIPOS DE TEXTOS EN GOOGLE FONTS*/
+}
 
+/*Importar fuentes de google fonts con URL o descargando el archivo por si no tienen el font en el equipo*/
+h2{
+    font-family: 'Roboto', Arial;
 }
