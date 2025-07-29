@@ -17,5 +17,26 @@ crt+alt+flechas (selección multiple para agregar el mismo texto a varios elemen
 }
 
 .form_input{
-    padding: 10px
+    padding: 10px;
+    /*Separa los inputs 10px*/
+    margin: 10px;
+    /*Separa los inputs 10px arriba y abajo y 20px derecha e izquierda*/
+    margin: 10px 20px;
+    /*Separa los inputs 10px arriba y abajo y 20px derecha e izquierda*/
+    margin: 10px 20px 30px 40px;
+}
+/*Se puede poner dos clases en un mismo elemento*/
+/*class = "form_input form_subbmit"*/
+.form_subbmit{
+    letter-spacing: 3px;
+    color: rgb(0, 0, 0);
+    background: orangered;
+    width: 50%
+}
+
+/*Styles of the boxes*/
+.box{
+    background: green;
+    width: 150px;
+    heigth: 150px;
 }

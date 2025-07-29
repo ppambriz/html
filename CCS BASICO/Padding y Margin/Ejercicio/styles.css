@@ -1,0 +1,37 @@
+body{
+    background: black;
+    font-family: sans-serif;
+    color: white;
+}
+
+.card{
+    background: coral;
+    width: 400px;
+    text-align: center;
+    /*centra la tarjeta respecto al contenedor*/
+    margin: auto;
+    /*Solo le da margen al top*/
+    margin-top: 20px;
+}
+
+h1{
+   padding-top:10px ; 
+   font-size: 25px;
+   margin: 0;
+}
+
+h2{
+    /*Tamaño de la fuente*/
+    font-size: 13px;
+    /*Grosor de la fuente*/
+    font-weight: 100;
+    /*Espacio entre letras*/
+    letter-spacing: 2px;
+}
+
+p{
+    font-size: 9px;
+    padding: 20px;
+    background: lightcoral;
+    text-align: justify;
+}

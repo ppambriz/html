@@ -1,0 +1,12 @@
+body{
+    margin:0;
+}
+
+.box{
+    background: green;
+    width: 150px;
+    height: 150px;
+    /*Se separan los boxes 10px con respecto al contenedor*/
+    /*Los margin se superponen predominando el más grande*/
+    margin: 10px;
+}

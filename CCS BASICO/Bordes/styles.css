@@ -1,0 +1,45 @@
+div{
+    /*background: red;*/
+    width: 200px;
+    margin: auto;
+    text-align: center;
+}
+
+div{
+    /* Se agrega el tamaño, el color y el estilo si o si para que se vea en el elemento*/
+    border-width: 3px;/*grosor del border*/
+    border-color: black;/*color del border*/
+    border-style: solid;
+
+    /*Otra forma de poner un border es:*/
+    border: 3px solid black;
+    /*Donde el primer elemento es width, el segundo es style y el tercero es color*/
+
+    border-bottom: 10px solid green;
+    border-top: 20px solid white;
+    border-left: 0 solid black;
+    border-right: 5px solid black;
+
+    /*Rodear border en pixeles y porcentajes se redondean diferentes en % y px*/
+    border-radius: 5px;
+
+    /*Redondear los bordes por secciones*/
+    border-top-left-radius:20px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 10px;
+
+    /*En una sola línea dos partes funciona en diagonal: esquina superiro izquierda a esquina inferior derecha y después esquina inferior izquierda a esquina superior derecha*/
+    border-radius: 10px 20px;
+    /*En una sola línea 4 partes: en el sentido de las manecillas del reloj */
+    border-radius: 10px 0 20px 12px;
+
+    /*anular los bordes en los input con border:none;*/
+}
+
+input{
+    margin: 5px;
+    padding: 7px;
+    border: none;
+    border-top: 1px solid black;
+    background: gainsboro;/*transparent desaparece el fondo o lo pone del color del fondo del contenedor,lo hace transparente*/
