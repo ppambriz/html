@@ -1,0 +1,36 @@
+/*PIXELES -px-: son absolutos, */
+/*CENTIMETROS -cm-: medidas exactas para impresión*/
+/*PULGADAS -in-: inch, memidas para impresión*/
+/*UNIDADES RELATIVAS: el tamaño de la unidad depende de otros elementos*/
+/*No se recomienda poner porcentajes en font-size*/
+/*El porcentaje es con respecto al elemento tarde*/
+/*em equivale a el tamaño del font-size del elemento padre, si el elemento padre no tiene definido font-size va a buscar al siguiente*/
+/*rem equivale al tamaño del font-zise del elemento raíz "html" si no se define el tamaño de letra del elemento raíz, por default es 16px*/
+/*vh medida con respecto al alto total de la ventana donde 100 es el méximo*/
+/*vw medida con respecto al ancho total de la ventana donde 100 es el méximo*/*/
+
+body{
+    margin: 0;
+}
+
+div{
+    background: #ededed;
+    padding: 20px;
+    font-family: sans-serif;
+    border-left: 5px solid #999;
+}
+
+h1{
+    margin: 0;
+    font-size: 24px;
+}
+
+span{
+    color: #999;
+    font-size: 16px;
+    font-weight: 100px;
+}
+
+p{
+    color: #555;
+}

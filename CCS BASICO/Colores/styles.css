@@ -1,0 +1,56 @@
+
+
+/*RGBA PICKER: PAGINA PARA BUSCAR LOS VALORES RGB*/
+
+
+body{
+    margin: 0;
+}
+
+/*RGB: 256 COMBINACIONES DE COLORES/CADA COLOR PRIMARIO*/
+.box{
+    width: 100px; 
+    height: 100px;
+    /*Agregas un valor por color primario del 0 al 255*/
+    background: rgb(150, 74, 74);
+    margin: 20px;
+}
+/*RGBA (ALPHA): CAPA DE OPACIDAD*/
+.box2{
+    width: 100px;
+    height: 100px;
+    /*Se agrega un cuarto valor que es la opacidad del color donde 0 es nada y 1 es completo*/
+    background: rgba(255, 0, 0, 0.1);
+    margin: 20px;
+}
+
+/*exadecimal, 0,1,2,3,4,5,6,7,8,9,a,b,c,d,e,f*/
+/*en cada posición del color primario RGB los balores son desde el 0 hasta la f. 000000,ffffff*/
+.box3{
+    width: 100px;
+    height: 100px;
+    background: #000000;
+    background: #ffffff;
+    background: #AAA;
+    margin: 20px;
+}
+
+/*Exadecimal con Opacidad se agrega un cuarto valor*/
+.box4{
+    width: 100px;
+    height: 100px;
+    background: #00000000;
+    background: #ffffffff;
+    background: #AAAA;
+    margin: 20px;
+}
+
+.box5{
+
+    width: 100px;
+    height: 100px;  
+    /*              grados, saturación e iluminación*/
+    /*Colores en 360°*/
+    background: hsl(0, 10%, 55%);
+    margin: 20px;
+}

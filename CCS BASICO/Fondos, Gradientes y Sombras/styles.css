@@ -1,0 +1,32 @@
+body{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background-color: #0f0;
+}
+
+.box{
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    /*el ultimo dijito baja la opacidad hasta verlo transparente*/
+    background: #f3e7;
+    position: absolute;
+    top: 0;
+}
+
+.box2{
+    width: 300px;
+    height: 500px;
+    background-color: #000;
+    /*Se agrega imagen como fondo de la box*/
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYzgzF9EiCWfk78sy20AwpK_PfaynSo3wwiA&s");
+    /*Toma el tamaño de la caja o en pixeles*/
+    background-size: 100%;
+    background-size: 90px;
+    /*La imagen se ajusta lo mejor posible para que entre en la box*/
+    background-size: contain;
+    /*cover adapta la imagen para que entre a la box*/
+    background-size: cover;
+    background-position: center;
+}

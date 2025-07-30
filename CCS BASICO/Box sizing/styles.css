@@ -1,14 +1,26 @@
+/*
+
+*/
+
 body{
     margin: 0;
 }
 
 .box{
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
     background: red;
     margin: 10px;
 }
 
 .box-default{
-    
+    padding: 25px;
+    border: 10px solid black;
+}
+/*box-sizing: toma las medidas orginal de las cajas y ajusta padding y border a estas medidas*/
+/*Ajusta el contenido alas dimenciones del elemento margin, border y padding*/
+.box-new{    
+    padding: 25px;
+    border: 10px solid black;
+    box-sizing: border-box;/*content-box solo le da las medidas al contenido los demas no se adaptan border y padding*/
 }
