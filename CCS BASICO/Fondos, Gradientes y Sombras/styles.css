@@ -26,7 +26,70 @@ body{
     background-size: 90px;
     /*La imagen se ajusta lo mejor posible para que entre en la box*/
     background-size: contain;
-    /*cover adapta la imagen para que entre a la box*/
+    /*cover adapta la imagen para que entre a la box es mejor que 100%*/
     background-size: cover;
+    /*Con cover se puede usar center, left, right, top, bottom*/
+    /*Esto si la imagen no se ve completa con cover*/
     background-position: center;
+    /*Puedes maniupular la posición de la imagen así:*/
+    background-position: -50px -10px top;
+    /*Si la imagen por sus dimensiones se repite en el contenedor, usar:*/
+    background-repeat: no-repeat;
+    /*Si se crea un color d efondo negro por las dimensiones de la imagen, usar:*/
+    border-block-start-color: transparent;
+    /*O si se requiere repetir la imagen se puede repetor por ejes: x, y*/
+    /*O solo repeat se repite en ambos ejes*/
+    background-repeat: repeat-x;
+    background-repeat: repeat-y;
+
+    /*Esta función permite que la imagen o background no se mueva con el scroll, se quede fija*/
+    background-attachment: fixed;
+
+    /*una forma de definir un fondo en una sola línea es:*/
+    /*background: url("") background-position background-repeat background-size background-attachment background-color*/
+    /*Puedes agregal las que necesites*/
+    background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYzgzF9EiCWfk78sy20AwpK_PfaynSo3wwiA&s") center no-repeat cover fixed #000;
+
+    /*Gradientes: es un colot que se va cambiando de un color a otro*/
+    /*Para crear un gradiente se usa la propiedad background-image: linear-gradient(to right, #000, #fff);*/
+    /*to right es el angulo de la linea, puedes usar to top, to bottom, to left, to right, to top left, to top right, to bottom left, to bottom right*/
+    /*Puedes usar gradiente con colores en grados, por ejemplo:*/
+    background-image: linear-gradient(to right, #000, #fff);
+    /*Puedes usar gradiente con colores en porcentajes, por ejemplo:*/
+    background-image: linear-gradient(to right, #000 0%, #fff 100%);
+    /*Puedes usar gradiente con colores en porcentajes, por ejemplo:*/
+}
+.box3{
+    width: 200px;
+    height: 200px;
+    /*Para crear un gradiente radial se usa la propiedad background-image: radial-gradient(circle, #000, #fff);*/
+    /*De izquierda a derecha*/
+    background-image: linear-gradient(to right, #000 0%, #fff 100%);
+    /*De color a transparente (color del fondo)*/
+    background: linear-gradient(#000, transparent);
+    /*Gradiente se usa para resaltar el texto de los fondos*/
+    /*Podemos darle más de dos colores, tambien acomodarlos por porcentajes o grados*/
+    /*Para crear un gradiente radial se usa la propiedad background-image: radial-gradient(circle, #000, #fff);*/
+    /*De izquierda a derecha*/
+    background-image: radial-gradient(#000, #fff);
+    /*De izquierda a derecha*/
+    background-image: radial-gradient(circle, #000, #fff);
+    
+    background: conic-gradient(#000, #fff);
+    /*Conic-gradient es un gradiente que se crea en un círculo*/
+    /*Para crear un gradiente conic se usa la propiedad background-image: conic-gradient(#000, #fff);*/
+    /*De izquierda a derecha*/
+    background-image: conic-gradient(#000, #fff);
+    /*De izquierda a derecha*/
+    background-image: conic-gradient(circle, #000, #fff);
+}
+
+h1{
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 0 0 10px #000;
+    margin: auto;
+    margin-top: 20px;
 }

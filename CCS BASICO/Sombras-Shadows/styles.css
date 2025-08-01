@@ -1,0 +1,51 @@
+body{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.box{
+    width: 400px;
+    height: 600px;
+    background: #eee;
+    margin: 20px;
+    /*pixeles de sombra hacia: derecha,abajo,desenfocado,tamaño color*/
+    box-shadow: -20px -20px 30px 10px #000;
+    box-shadow: 0 0 50px 0 #0007;
+    box-sizing: border-box;
+    font-size: 18px;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: #444;
+    text-align: center;
+}
+
+h2{
+    margin: auto;
+    padding: 1cap;
+
+}
+
+p{
+    list-style: none;
+    text-align: justify;
+    line-height: 1.2;
+    padding:0 20px 0 20px;
+    /*Shadow al texto*/
+    /*derecha abajo desenfoque color (no permite tamaño)*/
+    text-shadow: -10px 5px 1px rgb(224, 40, 40);
+}
+
+img{
+    width: 150px;
+    border-radius: 100%;
+    margin-top: 20px;
+    box-shadow: -20px -20px 30px 10px #000;
+    box-shadow: 0 0 30px 10px #000;
+}
+/*sombra en una imagen png (sin fondo)*/
+img2{
+    border-radius: 100%;
+    box-shadow: 0 0 10px 1px #000;
+    filter: drop-shadow(0 0 5px #f92);
+}
