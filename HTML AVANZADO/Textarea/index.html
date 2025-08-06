@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Textarea</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!--Textarea: como un input pero se puede agregar más de una líena-->
+    <form><!--Un Form: se usa cuandos e hace un formulario (con inputs)-->
+        <h2>Formulario de contacto</h2>
+        <div class="form-input"><!--Un div se puede utilizar para hacer un bloque-->
+            <input type="text" placeholder="Nombre completo">            
+        </div>
+        <div class="form-input">
+            <input type="email" placeholder="Correo electrónico">
+        </div>
+        <div class="form-input">
+            <textarea maxlength="60" placeholder="Deja tu mensaje"></textarea><!--maxlength limita el máximo de caracteres-->
+        </div>
+        <div class="form-input">
+            <textarea disabled placeholder="Deja tu mensaje">zjcjhfdjshdjshd</textarea><!--disabled text área que solos e muestra pero no tiene funcion-->
+        </div>
+        <div class="form-input">
+            <textarea readonly placeholder="Deja tu mensaje">zjcjhfdjshdjshd</textarea><!--readonly texto que solo se lee-->
+        </div>
+    </form>
+</body>
+</html>
