@@ -1,0 +1,11 @@
+details{
+    background-color: #999;
+}
+/*Cuando se abre puedes modificar los valores*/
+details[open]{
+    background-color: beige;
+}
+
+summary{
+    background-color: #666;
+}

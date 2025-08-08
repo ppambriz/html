@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Labels</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!--Textarea: como un input pero se puede agregar más de una líena-->
+    <form><!--Un Form: se usa cuandos e hace un formulario (con inputs)-->
+        <h2>Formulario de contacto</h2>
+        <div class="form-input"><!--Un div se puede utilizar para hacer un bloque-->
+            <!--En para que el label redireccione al input correspondiente se usa id ="" en el input y un for="" en el label-->
+            <label for="nombre">Nombre completo</label>
+            <input id="nombre" type="text" placeholder="John Doe">            
+        </div>
+        <div class="form-input">
+            <label for="email">Email</label>
+            <input id="email" type="email" placeholder="ejemplo@gmail.com">
+        </div>
+        <div class="form-input">
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" maxlength="60" placeholder="Deja tu mensaje..."></textarea><!--maxlength limita el máximo de caracteres-->
+        </div>
+        <!--Para no usar el id y el for se ingresa el input dentro del label-->
+        <div class="form-input">
+            <label >Mensaje
+                <textarea maxlength="60" placeholder="Deja tu mensaje..."></textarea><!--maxlength limita el máximo de caracteres-->
+            </label>
+        </div>
+        <div class="form-input">
+            <label >Acepto terminos y condiciones
+                <input class="checkbox" type="checkbox">
+            </label>
+        </div>
+    </form>
+</body>
+</html>

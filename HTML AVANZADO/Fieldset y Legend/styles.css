@@ -1,0 +1,81 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+    color: #eee;
+    background-color: #222;
+}
+
+h2{
+    text-align: center;
+    margin: -1px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-weight: 100px;
+    font-size: 22px;
+    padding: 10px;
+}
+
+form{
+    background-color: transparent;
+    padding: 20px 0px;
+    max-width: 500px;/*Unicamente se agranda 500px*/
+    margin: auto;/*Se centra en bloque, margen igual a los costados izq der, para diferentes tamaños de pantalla*/
+    box-shadow: 0px 0px 55px #fff2;/* izq-der, arr-aba, tam, color*/
+    margin-top: 50px;
+    border-radius: 8px;
+}
+
+.form-input{
+    padding: 6px 20px;
+}
+
+input, textarea, select{
+    width: 100%;
+    /*padding: 0;
+    margin: 0;
+    border: none; no muestra el borde del inpu*/
+    box-sizing: border-box;/*Se usa en lugar de la configuración anterior*/
+    padding: 6px 8px;
+    border: none;/*Debemos quitar los border para manipularlos*/
+    border: 1px solid #4f9;
+    box-shadow: 0px 0px 15px #0003;
+    background-color: transparent;
+    border-radius: 4px;
+    color: #4f9;
+}
+
+textarea{
+    min-width: 100%;/*textarea al wid de los demás elementos*/
+    resize: vertical;/*Solo permite manipular su tamaño horizontalmente*/
+    resize: horizontal;/*Solo permite manipular su tamaño verticalmente*/
+    font-family: sans-serif;/*Cambiar tipografía*/
+    resize: none;/*No permite cambiar el tamaño del textárea*/
+    max-height: 200px;
+    min-height: 100px;
+}
+
+label{
+    font-size: 0.88em;
+    line-height: 2;/*No se puede poner margin ni padding, usar line-height*/
+}
+
+.checkbox{
+    width: auto;/*Para posicionarlo a un lado del texto*/
+    height: 10px;/*Altura del checkbox*/
+}
+
+option{
+    background-color: #222;
+    padding: 10px;
+}
+
+fieldset{
+    border-radius: 5px;
+    border: 1px solid #666;
+    padding: 0 20px 20px 20px;
+    margin: 20px;
+}
+
+legend{
+    padding: 0 6px;
+}

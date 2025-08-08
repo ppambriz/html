@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectores, Lista de datos y optiones</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<!--Un selector muestra una lista donde puedes selecionar opciones-->
+<body>
+    <form>
+        <h2>Formulario de contacto</h2>
+        <div class="form-input">
+            <label for="nombre">Nombre completo</label>
+            <input id="nombre" type="text" placeholder="John Doe">            
+        </div>
+        <div class="form-input">
+            <label for="email">Email</label>
+            <input id="email" type="email" placeholder="ejemplo@gmail.com">
+        </div>
+        <div class="form-input">
+            <label>Tipo de usuario
+                <select>
+                    <option>Seguidor</option>
+                    <option>Empresa</option>
+                    <option>Otros</option>
+                </select>
+            </label>                        
+        </div>
+        <div class="form-input">
+            <label>Referente
+                <input list="referente">
+                <datalist id="referente">
+                    <option value="Soy Dalto">Creador de contenido</option>   
+                    <option value="user2">Una empresa</option>   
+                    <option value="user3">Un amigo</option>   
+                </datalist>
+            </label>                      
+        </div>
+        <div class="form-input">
+            <label >Mensaje
+                <textarea maxlength="60" placeholder="Deja tu mensaje..."></textarea><!--maxlength limita el máximo de caracteres-->
+            </label>
+        </div>
+        <div class="form-input">
+            <label >Acepto terminos y condiciones
+                <input class="checkbox" type="checkbox">
+            </label>
+        </div>        
+    </form>
+</body>
+</html>

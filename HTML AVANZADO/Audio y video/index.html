@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio y video</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!--VIDEO-->
+    <div>
+        <!--Se reproduce automaticamente en cuantoel usuario interactua con la página-->
+        <!--<video autoplay src="jojo.MP4"></video>
+        Se ingresan controles en el video
+        <video controls src="jojo.MP4"></video>-->
+        <!--Se reproduce automaticamente pero con controles es necesario poner muted, el video se reproduce en silencio
+        <video controls autoplay muted src="jojo.MP4">Tu navegador no soporta video</video>-->
+        <!--loop hace que el video se reprodusca en ciclo-->
+        <video controls loop autoplay muted src="jojo.MP4">
+            <track src="captions.vtt" default kind="captions" srclang="es" label="Español LATAM"></track><!--Subtitulos-->
+            Tu navegador no soporta video</video>
+
+    </div>
+
+    <!--AUDIO DESDE UN VIDEO-->
+    <div>
+        <audio controls autoplay muted src="jojo.MP4"></audio>
+    </div>
+
+    <!--AUDIO-->
+    <div>
+        <audio src="audio.mp3"></audio>
+    </div>
+    
+</body>
+</html>
