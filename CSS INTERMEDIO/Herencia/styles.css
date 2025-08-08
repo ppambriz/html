@@ -1,0 +1,14 @@
+div{
+    color: blue;
+    font-family: 'Courier New', Courier, monospace;
+    width: 50%;
+    border: 1px solid black;
+    padding: 0;
+}
+
+h1{
+    color: inherit;/*Indica que herede el color de su padre, su abuelo...*/
+    width: inherit;margin: 0;
+    color: initial; /*toma el color inicial*/
+    font-family: initial;
+}

@@ -1,0 +1,22 @@
+/*Normal way*/
+section .element1,
+section .element2,
+section .element3{
+    color: red;
+}
+
+/*Correct way using "where*/
+section :is(.element1,.element2, .element3){
+    color: rgb(27, 27, 34);
+}
+
+/*Correct way using "is*/
+section :is(.element1,.element2, .element3){
+    color: blue;
+}
+
+/*has: applies styles if the "element1" class exist*/
+section :has(.element1){
+    background-color: black;
+    color: white;
+}

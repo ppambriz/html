@@ -1,0 +1,84 @@
+h1{
+    color: #48e;
+    font-family: sans-serif;
+    margin: 30px;
+}
+
+/*Pseudo class, apply a style to a specific action*/
+/*A style is applied on mouseover*/
+h1:hover{
+    color: black;
+    background-color: #ccc;
+}
+/*A style is apply when clicking on the label*/
+h1:active{
+    background-color: rgb(221, 13, 179);
+    color: white;
+}
+
+ul{
+    background-color: #999;
+    padding: 0;
+}
+
+/*Selecting the first LI*/
+li:first-child{
+    color: red;
+}
+
+/*Selecting the last LI*/
+li:last-child{
+    color: blue;
+}
+
+/*Selecting items skipped to two at a time*/
+li:nth-child(2n){
+    color: purple;
+    background-color: #fff;
+}
+
+/*Selecting items skipped to three at a time*/
+li:nth-child(3n){
+    color: yellow;
+}
+
+/*Selecting a specifity item*/
+li:nth-child(2){
+    color: green;
+}
+/*Because of the specifity it has more weight*/
+/*Excluding a LI from styles*/
+.lista li:not(.exclude){
+    color: #fff;
+}
+
+/*The specifity of checkbox type input is used when status is off*/
+input[type="checkbox"]{
+    margin: 50px;
+}
+/*The specifity of the checkbox type input is used when status is on*/
+input[type="checkbox"]:checked{
+    margin: 0;
+}
+
+/*Appling color to unvisited site*/
+a:link{/*Unvisited link*/
+    color: red;
+}
+
+/*Aplingg color to visited site*/
+a:visited{/*Visited link*/
+    color: green;
+}
+
+/*Appling styles if invalid*/
+input:invalid{
+    color: red;
+}
+
+/*Appling styles if valid*/
+input:valid{
+    color: green
+}
+
+/*They are more psudo class on the web*/

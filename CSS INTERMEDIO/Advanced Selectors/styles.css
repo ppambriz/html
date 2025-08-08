@@ -1,0 +1,43 @@
+/*Se usa "selectores" para especificar la imagen que contenga ese atributo*/
+img[src="jojo.JPG"]{
+    width: 100%;
+}
+/*Se usa selector para especificar las imagenes que terminen en JPG*/
+img[src$="JPG"]{
+    width: 50%;
+}
+/*Se usa selector para especificar las configuraciones a todas las imagenes que inicien con ese nombre*/
+img[src^="jojo"]{
+    width: 40%;
+}
+
+/*SELECTORES DESCENDIENTES*/
+/*ESPECIFICAMOS UN "LI" DENTRO DE UN "UL"*/
+ul li{
+    color: rgb(29, 73, 147);
+}
+
+/*Se le da estilo a un strong dentro de un ul mediante un selector*/
+ul strong{
+    color: red;
+}
+
+/*Especificando que al estilo se le de a un hijo directo de un "ul"*/
+ul > p{
+    color: red;
+}
+
+/*SELECTORES ADYACENTES*/
+/*Se aplica estilo a un "p" que está después de un "h1", junto al mismo nivel de idenentación*/
+h1 + p{
+    color:blue
+}
+/*Se les da estilo a todos los "p" despues del "h1 en el mismo nivel de identación"*/
+h1 ~ p{
+    color:blue
+}
+/*Se especifica un "p" inmediatamente despues de otro "p" después de un "h1"*/
+h1 + p + p{
+    color: green;
+}
+

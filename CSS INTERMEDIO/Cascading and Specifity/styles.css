@@ -1,0 +1,20 @@
+/*En specifity tiene más peso un id que una clase y un elemento*/
+#title{
+    color: green;
+}
+
+/*En Specifity tiene más peso una clase que un elemento*/
+.titulo{
+    color: red;
+}
+
+h1{
+    color: blue;
+}
+
+/*poner un estylo directo en html, tiene mas peso que cualquiera de los anteriores ya sea dentro de la etiqueta o al final como una etiqueta <Style> Estilos <Style>*/
+
+/*Más pesa que los anteriores es al usar la palabra: !IMPORTANT*/
+h1{
+    color: blue !important;
+}
