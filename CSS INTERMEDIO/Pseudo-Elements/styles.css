@@ -7,3 +7,36 @@ h1::first-letter{
     font-size: 3em;
     letter-spacing: -8px;
 }
+
+/*first-line: applies styles only on first line*/
+div::first-line{
+    color: red;
+    font-weight: bold;
+}
+
+/*Apply styles when selecting any text*/
+h1::selection{
+    background-color: green;
+}
+
+/*Apply styles to the input placeholder*/
+input::placeholder{
+    color: white;
+    background-color: black;
+}
+
+/*Apply styles to the bullets in the order list*/
+li::marker{
+    color: red;
+}
+
+/*Add text before the declared element and applies styles to it*/
+li::before{
+    content: 'Elemento: ';
+    color: red;
+}
+/*Add text after the declared element and applies styles to it*/
+li::after{
+    content: ' Despues: ';
+    color: rgb(54, 15, 228);
+}
