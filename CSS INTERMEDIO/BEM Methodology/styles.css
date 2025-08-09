@@ -1,0 +1,23 @@
+.lista{
+    border: 2px solid black;
+    border-radius: 4px;
+}
+
+.lista__item{
+    color: gray;
+    margin: 10px 0;
+    list-style: square;/*Cambia el estilo de las viñetas*/
+}
+
+.item--danino{
+    color: red;
+}
+
+.item--importante{
+    color: blue;
+}
+
+.lista--vieja{
+    opacity: 0.5;/*Lower the opacity of element*/
+    background-color: #ddd;
+}
