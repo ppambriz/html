@@ -1,0 +1,74 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.box1 {
+    width: 100px;
+    height: 100px;
+    background-color: #f00;
+    margin: auto;/*Alings the element to the center of its container*/
+    margin-top: 25px;
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+    /*With these two properties a transition is asigned*/
+    transition-property:background-color, color;
+    transition-duration: 2s;
+    display: inline-block;
+}
+
+.box2 {
+    width: 100px;
+    height: 100px;
+    background-color: #f00;
+    margin: auto;/*Alings the element to the center of its container*/
+    margin-top: 25px;
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+    /*With these two properties a transition is asigned*/
+    transition-property:color, font-size;
+    transition-duration: 1s;
+    display: inline-block;
+    transition-delay: 1s;/*Transition is applies after #s*/
+}
+
+.box1:hover {
+    background-color: #a22;
+    color: #fff;
+}
+
+.box2:hover {
+    background-color: #a22;
+    color: #fff;
+    font-size: 20px;
+}
+
+.box3 {
+    width: 100px;
+    height: 100px;
+    background-color: #f00;
+    margin-top: 25px;
+    font-size: 30px;
+    /*With these two properties a transition is asigned*/
+    transition-property:left;
+    transition-duration: 2s;
+    /*using the transition curve: ease, ease-int, ease-in-out..*/
+    /*cubic-bezier.com*/
+    transition-timing-function: ease-in-out;
+    position: relative;
+    left: 0;
+    transition: left, 1s ease 1s;/*********/
+    transition: left 3s;
+    ;
+}
+
+body{
+    height: 100vh;
+}
+
+body:hover .box3 {
+    background-color: blue;
+    left: 300px;
+}

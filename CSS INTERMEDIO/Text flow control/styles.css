@@ -1,0 +1,20 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #ccc;
+}
+
+.box {
+    width: 100px;
+    height:100px;
+    background-color: #fff;
+    margin: auto;
+    margin-top: 50px;
+    border: 1px solid #0006;
+    box-shadow: 0px 0px 15px #0fe9;
+    white-space: normal;/*default value of the property*/
+    white-space: nowrap;/*Prevents line breaks */
+    white-space: pre;/*detects lines breaks in an htlm file*/
+    white-space: pre-wrap;/*Respects line breaks in the HTML file, but also adds them if the text overflows*/
+    overflow:auto;
+}
