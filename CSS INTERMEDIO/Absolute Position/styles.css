@@ -1,0 +1,41 @@
+body{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: sans-serif;
+    text-align: center;
+    background-color: #ccc;
+}
+
+.container{
+    border: 2px solid #000;
+    margin: 10px;
+    background-color: #fff;
+/*position: relative is set on the container because it's the reference for the box positioned with absolute. This ensures the absolutely positioned box is aligned relative to the container.*/
+    position: relative;
+}
+
+.box{
+    width: 50px;
+    height: 50px;
+    background-color: #db7;
+    color: #fff;
+    /*position: static;/*It has no motion properties*/
+}
+
+.box--blue{
+    background-color: #37d;
+    position: absolute;/*It doesn't retain its space within the container, but motion properties are applied to it*/    
+    left: 30px;
+    top: 30px;
+    z-index: 1;
+    /*margin: auto; Centra la caja si left, rigth, top y bottom es 0*/
+    /*Sus movimientos toman como punto de referencia su contenedor con position: relative, si este no está definido toma como p.r. el body*/
+}
+/*Modifying the first child of the box class*/
+.box--red {
+    background-color: #e53;
+    position: relative;
+    top: 10px;
+    left: 10px;
+}

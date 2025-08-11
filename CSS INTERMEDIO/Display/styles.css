@@ -1,0 +1,29 @@
+body{
+    margin: 0;
+}
+
+div{
+    padding: 20px;
+    background-color: #666;
+}
+/*a´s are inline elements, that's why display: block is used */
+a{
+    background-color: red;
+    color: white;
+    /*we indicate that it use all the available width for each element and stars a new line*/
+    display: block;
+    border: 1px solid #0005;
+    margin: 20px;
+    padding: 20px;
+}
+/*p's are inline elements*/
+p{
+    /*we indicate tha the elements are positioned inline*/
+   display: inline;/*inline: allowsn't us manage better the element*/
+   background-color: #0005;
+    color: #fff;
+    margin: 5px;
+    padding: 20px;
+}
+
+/*Using display:block allows us to better manage elements (padding, margin, etc.*/

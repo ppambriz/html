@@ -1,0 +1,32 @@
+body{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.box{
+    width: 50px;
+    height: 50px;
+    background-color: orange;
+    color: #fff;
+    /*position: static;/*It has no motion properties*/
+    position: relative;/*Movement properties are assinged*/
+    /*The container's space is preserved*/
+}
+
+.box--blue{
+    width: 50PX;
+    height: 50px;
+    background-color: blue;
+    /*left, rigth, top & bottom*/
+    left: 20px;
+    top: 20px;
+    z-index: 1;/*The layer level default of the element is Zero, this can changed with "z-index:(layer number)"*/    
+}
+/*Modifying the first child of the box class*/
+.box:first-child {
+    top: 60px;
+    left: 40px;
+    background-color: red;
+    z-index: 2;/*As layer level is higher, it overlaps*/    
+}
