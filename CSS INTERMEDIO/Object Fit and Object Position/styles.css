@@ -1,0 +1,18 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+
+img{
+    width: 400px;
+    height: 200px;
+    border: 2px solid black;
+    margin-top: 50px;
+    margin-left: 50px;
+    object-fit: fill;/*Default porperty*/
+    object-fit: contain;/*The estabilished dimensions are adjusted at least once*/
+    object-fit: none;/*Mantains original dimentions*/
+    object-fit: scale-down;/*Fits the image to the container's smallest dimension*/
+    /*Can be used: top, botton, left, rigth, #px, #px #px*/
+    --object-position: 50px 50px;/*Perserves the image according to the established values*/
+}
