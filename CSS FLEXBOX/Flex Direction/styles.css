@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.flexbox {
+    display: flex;/*With this property, the child elements become flexible*/
+    /*flex-direction is set to row, which arranges the items in a horizontal line from left to right*/
+    flex-direction: row;
+    /*flex-direction is set to row-reverse, which arranges the items in a horizontal line form right to left*/
+    flex-direction: row-reverse;
+    /*flex-direction is set to column, which arranges the items in a vertical line from top to bottom*/
+    flex-direction: column;
+    /*flex-direction is a set to column-reverse, which arranges the items in a vertical line from bottom to top*/
+    flex-direction: column-reverse;
+}
+
+.flex-item{
+    width: 100px;
+    height: 100px;
+    background-color: #911;
+    margin: 10px;
+}
+
+.flex-item:first-child {
+    background-color: #d56;
+}
