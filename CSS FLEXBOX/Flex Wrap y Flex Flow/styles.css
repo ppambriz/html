@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.flexbox {
+    --display: flex;
+    /*Allows flex items to move to the next line when they dont'n fit in a single row, adapting to the container's size.*/
+    -flex-wrap: wrap;
+
+    /*using flexdirection:column*/
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;/*They resize based on the dimensions of the parent container*/
+    height: 300px;
+}
+
+.flex-item {
+    background-color: #800;
+    margin: 10px;
+    color: #fff;
+    font-size: 40px;
+    text-align: center;
+    width: 150px;
+}
