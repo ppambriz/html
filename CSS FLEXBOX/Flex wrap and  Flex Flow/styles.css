@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.flexbox {
+    display: flex;/*Sets the container as flex container, making its child elments behave as flex items.*/
+    /*
+    ****Defining the flex container's directions****
+        -As default is row
+    -   row-reverse
+    -   column: if the items do not have specifed width or heigth, they will inherit the width or height of the container.
+    -   column-reverse
+    */
+    /*Using flex-wrap, items will wrap onto the next line if they don’t fit within the container.*/
+    flex-wrap: wrap;
+    border: 2px solid #000;
+    margin: 20px;
+    justify-content: start;/*Alinea los item al inicio del eje; x cuando es row, z cuando es column*/
+    justify-content: end;/*Alinea los item al final del eje (x ó y)*/
+    justify-content: center;/*Alinea los item al centro del container*/
+    justify-content: space-between;/*Pone el primer elemento al inicio del eje, el ultimo al final del eje y los que están en medio distribulle el espacio para darles el mismo*/
+    justify-content: space-around;/*Todos los elementos tienen una separación igual*/
+    justify-content: space-evenly;/*Agrega el mismo espacio descartando el margin*/
+    flex-flow: row wrap;
+    align-items: baseline;
+    align-content: end;/*Para más de una línea*/
+    align-items: center;/*Para una sola linea*/
+    height: 360px;
+}
+
+.flex-item {
+    width: 100px;
+    background-color: #800;
+    margin: 10px;
+    color: #fff;
+    font-size: 40px;
+    text-align: center;
+    width: 100px;
+    height: 50px;
+}
+
+.flex-item:first-child {
+    background-color: #f77;
+    order: 1;/*Define el orden del item de 0 a n*/
+}
+
+.flex-item:last-child {
+    background-color: #000;
+    order: 2;
+}

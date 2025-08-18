@@ -1,0 +1,37 @@
+div, body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #ccc;
+    box-sizing: border-box;
+}
+
+.flexbox {
+    display: flex;
+    flex-flow: row wrap;    
+    margin: 20px;
+    align-items: center;
+    border: 2px solid #0009;
+    gap: 30px;/*Sets the gap between child elements*/
+}
+
+.flex-item:nth-child(2n) {
+    background-color: #f77;
+}
+
+.flex-item {
+    background-color: #800;
+    color: #fff;
+    font-size: 40px;
+    text-align: center;
+    flex: 1 1 100px;
+}
+
+.flex-item:first-child {
+    background-color: #f77;
+    -flex-grow: 2;/*Permite que el elemento crezca base al container*/
+    flex-shrink: 3;/*Encoje solo este elemento y los demas no*/
+}
+
+.flex-item:last-child {
+    background-color: #000;
+}
