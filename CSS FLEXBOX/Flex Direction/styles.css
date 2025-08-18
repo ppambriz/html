@@ -4,24 +4,33 @@ body {
 }
 
 .flexbox {
-    display: flex;/*With this property, the child elements become flexible*/
-    /*flex-direction is set to row, which arranges the items in a horizontal line from left to right*/
-    flex-direction: row;
-    /*flex-direction is set to row-reverse, which arranges the items in a horizontal line form right to left*/
+    display: flex;/*Sets the container as flex container, making its child elments behave as flex items.*/
+    /*
+    ****Defining the flex container's directions****
+        -As default is row
+    -   row-reverse
+    -   column: if the items do not have specifed width or heigth, they will inherit the width or height of the container.
+    -   column-reverse
+
+    */
     flex-direction: row-reverse;
-    /*flex-direction is set to column, which arranges the items in a vertical line from top to bottom*/
     flex-direction: column;
-    /*flex-direction is a set to column-reverse, which arranges the items in a vertical line from bottom to top*/
-    flex-direction: column-reverse;
 }
 
-.flex-item{
-    width: 100px;
-    height: 100px;
-    background-color: #911;
+.flex-item {
+    width: 180px;
+    background-color: #800;
     margin: 10px;
+    color: #fff;
+    font-size: 40px;
+    text-align: center;
 }
 
 .flex-item:first-child {
-    background-color: #d56;
+    background-color: #f77;
 }
+
+.flex-item:last-child {
+    background-color: #000;
+}
+

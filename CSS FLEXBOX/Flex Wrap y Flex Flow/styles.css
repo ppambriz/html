@@ -16,10 +16,14 @@ body {
 }
 
 .flex-item {
-    background-color: #800;
+    background-color: #911;
     margin: 10px;
     color: #fff;
     font-size: 40px;
     text-align: center;
     width: 150px;
+}
+
+.flex-item:first-child {
+    background-color: #f77;
 }
