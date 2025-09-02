@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+div, body {
+    box-sizing: border-box;
+}
+
+img {
+    /*Le indicamos que tendrá un ancho máximo a su tamaño original, con esto aseguramos que no se pixelié*/
+    max-width: 100%;
+    /*El height se adapta al tamaño del ancho sin descuadrar*/
+    height: auto;
+}
+
+.container {
+    max-width: 100%;
+    aspect-ratio: 16/9;
+    margin: auto;
+}
+
+video {
+    max-width: 100%;
+}

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Picture, Source and Media</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <picture>
+        <!--Se acomodan en orden del más chico al más grande-->
+        <source media="(max-width: 600px)"
+        srcset="image300X300.webp">
+        <source media="(max-width: 800px)"
+        srcset="image600x600.jpg">
+        <img src="image900x900.jpg" alt="">
+    </picture>
+</body>
+</html>

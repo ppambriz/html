@@ -1,0 +1,22 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.grid {
+    /*Definimos el contenedor como grilla*/
+    display: grid;
+    /*Le indicamos cuantas columnas agregar ya que por default solo agrega una*/
+    grid-template-columns: auto 200px 200px;
+    grid-template-rows: 1fr 2fr 300px;
+    /*Lo posiciona de derecha a izquierda*/
+}
+
+.grid-item {
+    background-color: #48e;
+    margin: 10px;
+    padding: 10px;
+    font-size: 30px;
+    color: #fff;
+
+}

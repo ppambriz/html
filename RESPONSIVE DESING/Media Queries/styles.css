@@ -1,0 +1,23 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+div, body{
+    box-sizing: border-box;
+}
+
+@media print {
+    /*Se establece el bloque que se va a modificar, en este caso al imprimir*/
+    body {
+        font-size: 240pt;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    body {
+        font-size: 30px;
+        background-color: black;
+        color: white;
+    }
+}
