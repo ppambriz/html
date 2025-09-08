@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+div, body {
+    box-sizing: border-box;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 150px);
+    grid-template-rows: repeat(1,150px);
+    gap: 10px;
+    padding: 10px;
+    /*Se mueve el hijo horizontal*/
+    justify-items: start;
+    /*Se mueve el padre horizontal*/
+    justify-content:center ;
+    /*Se mueve el hijo vertical*/
+    align-items: center;
+    /*Se mueve el padre horizontal*/
+    align-content: center;
+
+    height: 350px;
+    border: 2px solid #000;
+    margin: 20px;
+}
+
+.grid-item {
+    background-color: #48e;
+    color: wheat;
+    font-size: 30px;
+    max-width: 100%;
+    font-size: 50px;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-item:hover {
+    opacity: 0.74;
+}
